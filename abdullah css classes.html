@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css classes </title>
+    <!-- there are three types of css(inline,internal,external) -->
+    <!-- inline hum tab use karta h jab hamien ek particular line ko design karta h -->
+    <!-- internal css hum tab use karta h jab hum ek hi file m ek particular selector(eg <p>) ko design karna ho -->
+        <!-- external css hum tab use karta h jab hum alag file m ek particular selector(eg <p>) ko design karna ho-->
+            <!-- !important hum tab use karta h jab hum kisi cheez ko emphasize karey -->
+            <!-- web safe fonts (writing styles) webite:google fonts -->
+            <!-- media queries ko hum website ko responsive bananay k lya use karta h -->
+</head>
+
+<body>
+   
+    
+<!-- internal css ko use karna k tareeka -->
+    <style>
+        /* *{ 
+             
+        }*/
+        body{
+            background-color:#a3e9e9;
+
+
+
+        }
+        span{
+            color: blue;
+            background-color: greenyellow;
+            
+        }
+        /* id css */
+            #firstpara{
+                color: green;
+                background-color: white;
+                
+            }
+            /* class css */
+            .haddi{
+                color:rgb(2, 77, 77)
+                
+            }
+            /* fonts class */
+                .fonts{
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-weight: bold;
+                    font-size: 33px;
+                    line-height: 2em;
+                    background-color: rgb(22, 201, 201);
+                    font-style: italic;
+            }
+            /* border section */
+            
+                #border{
+                    border: 8px solid blue;
+                    /* border-width: 4px; 
+                    border-color: blue;
+                    border-style: solid;*/
+                    border-radius: 13px;
+          }
+
+          #top{
+            border-top: 5px solid purple;
+            border-top-right-radius: 13px;
+            border-right: 4px solid;
+                }
+
+             #backgroundpic{
+                height: 1100px;
+                width: 500px;
+                background-image: url(pic.jpg);
+                border: 2px solid;
+                background-repeat: no-repeat;
+                background-position: center center;
+                color: black;
+                /* background-position: 33px 45px; is tarika say bhi m set kar sakta hu*/
+            }
+
+            .padding{
+                background-color: rgb(34, 34, 196);
+                color: black;
+                border: 4px solid yellow;
+                padding:20px 15px;
+                margin: 30px 548px;
+                border-radius: 18px;
+                height: 150px;
+                width: 250px;
+                box-sizing: border-box;
+                /* padding/margin ko padding-top margin-bottom kar k bhi set kar sakta h image ki tarha */
+                
+
+
+
+            }
+            .computer{
+                font-size: 22px;
+                border: 4px solid rgb(89, 138, 150);
+                height: 225px;
+                box-sizing: border-box;
+                background-color: rgb(180, 152, 127);
+                column-count: 2;
+                column-gap: 10px;
+                display: flex; 
+                /* Flexibility: Flexbox allows flex items to dynamically adjust their width, height, and order to fit the available space within the flex container. */
+            }
+            #stationery{
+                float: left;
+                border: 4px solid rgb(128, 60, 128);
+                width:47%;
+                height: 90px;
+                padding-top: 8px;
+                padding-bottom: 69px;
+                padding-left: 9px;
+                margin-left: 5px;
+                margin-right: 5px;
+                
+            }
+            #comp{
+                float: right;
+                border: 4px solid  rgb(128, 60, 128);
+                width: 47%;
+                height: 90px;
+                padding-top: 8px;
+                padding-bottom: 69px;
+                padding-left: 9px;
+                margin-left: 5px;
+                margin-right: 5px;
+                
+                
+            }
+            #veg{
+               
+                border: 4px solid  rgb(128, 60, 128);
+                width: 47%;
+                height: 177px;
+                margin-bottom: 8px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 8px;
+                
+            }
+            #egg{border: 4px solid  rgb(128, 60, 128);
+                width: 47%;
+                height:  177px;
+                margin-bottom: 8px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 8px;
+                text-align: right;
+            }
+            .head{
+                color:lightskyblue;
+                text-align: center;
+                text-decoration: underline;
+            }
+            .link{
+                color: black;
+                background-color: royalblue;
+                border: 4px;
+                border-radius: 18px;
+                padding: 10px;
+                margin: 10px;
+            }
+            .ref{
+                text-decoration: underline;
+                background-color: rgb(42, 151, 165);
+                color: blue;
+                border: 4px solid;
+                cursor: pointer;
+                padding: 10px;
+                margin: 10px;
+                font-size: 18px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                border-radius: 18px;
+             
+            }
+            a:hover{
+                color: black;
+                background-color: yellow;
+            }
+            a:visited{
+                background-color: rgb(12, 12, 4);
+                color: yellow;
+            }
+            a:active{
+                background-color: blue;
+            }
+            button:hover{
+                color: black;
+                background-color: yellow;
+            }
+            button:visited{
+
+                background-color: rgb(12, 12, 4);
+                color: yellow;
+            }
+            button:active{
+                background-color: blue;
+            }
+            .navbar{
+                background-color: rgb(88, 85, 85);
+                border-radius: 4px;
+                
+            }
+            .navbar ul{
+                overflow: auto;
+            }
+            .navbar li{
+                float: left;
+                margin: 20px 43px;
+                font-size: 20px;
+                font-style:normal;
+               
+
+                
+
+            }
+            .navbar li a{
+                padding: 4px;
+                color:white;
+
+                text-decoration: none;
+                
+                
+            }
+            .search{
+                float: right;
+                padding: 14px 70px; 
+                
+            }
+            .navbar input{
+                border-radius: 17px;
+                height: 18px;
+                padding: 7px 34px;
+            }
+           .gucci{
+            border: 4px solid black;
+            border-radius: 18px;
+            display: inline-block;
+            width: 28%;
+            box-sizing: border-box;
+            background-color: rgb(35, 214, 154);
+            font-size: 20px;
+            padding: 19px;
+            margin: 22px;
+           
+           }
+
+           img {
+            margin: auto;
+            display: block;
+            width: 94px;
+            height: 70px;
+            border: 4px solid black;
+            border-radius: 18px;
+        }
+
+        .hello {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+         /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+        /* position: relative; */
+        
+        /* absolute: Positions the element relative to the positon of its first parent*/
+        /* position: absolute; */
+
+        /* top: 34px;
+        left: 134px; */
+
+        /* fixed: Positions the element relative to the browser window; *
+  .position
+        {
+            border: 5px solid black;
+            height: 1900px;
+            width: 100%;
+        }
+        .box
+        {
+            border: 4px solid red;
+            height: 190px;
+            width: 22%;
+            display: inline-block;
+            text-align: center;
+            margin: 4px 10px;
+        }
+        
+        {
+             #box1 
+            position: relative;
+        top: 44px;
+        left: 30px;
+    }
+        #box2
+    {
+        position: absolute;
+        top: 100px;
+        left: 55px;
+    }
+        #box3
+    {
+        position: sticky;
+      
+        top: 3px;
+    }
+        #box4
+    { 
+        height: 80px;
+        position: fixed;
+        right: 4px;
+        bottom: 3px;*/
+    
+    
+    
+    .visible{
+        border: 4px solid black;/* z-index  will work only for position: relative, absolute, fixed or sticky; */
+           
+            /* will hide the element and the space */
+            /* display: none;  */
+            /* will hide the element but will show its empty space */
+            /* visibility:hidden;  */
+        height: 100px;
+        width: 100px;
+       
+    }
+    #box7{
+        background-color: red;
+        position: relative;
+       
+        top: 70px;
+        z-index: 12;
+    }
+    #box8{
+        background-color: green;
+        position: relative;
+        top: 48px;
+        z-index: 15;
+        @media screen {min-width: 300;
+            
+        }
+        
+    }
+    #box9{
+        background-color: blue;
+        position: relative;
+        display: none;
+        
+            
+        
+       
+       
+       
+    }
+    #box10{
+        background-color: yellow;
+        position: relative;
+        visibility: hidden;
+      
+    }
+    .container{
+            height: 544px; 
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center; 
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            box-shadow: 5px 8px 13pxs ;
+           
+        }
+            .item{
+            width: 40%;
+            height: 120px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 8px 13pxs ;
+           
+        }
+        #flex-1{
+            order: 3; box-shadow: 5px 8px 13pxs ;
+
+        }
+        #flex-2{
+
+            order: 5; box-shadow: 5px 8px 13pxs ;
+           
+        }
+       
+        #flex-3{
+
+            order: 5; box-shadow: 5px 8px 13pxs ;
+    
+        }
+       
+        #flex-4{
+
+            order: 9;box-shadow: 5px 8px 13pxs ;
+        }
+       
+        #flex-5{
+
+            order: 7;box-shadow: 5px 8px 13pxs ;
+        }
+       
+        #flex-6{
+            box-shadow: 5px 8px 13pxs ;
+
+            order: 6;
+             /* flex-grow: 3;
+            flex-shrink: 3 ; 
+            flex-basis: 160px;*/
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+             /* flex: 2 2 230px; 
+             align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;*/
+        }
+        .box {
+            text-align: center;
+            background-color: rgba(255, 196, 0, 0.959);
+            color: white;
+            font-size: 50px;
+             display: none;
+        }
+        @media (min-width: 400px){
+            #box1{
+                display: block;
+            }
+        }
+        @media (min-width: 450px) and (max-width: 600px){
+            #box2{
+                display: block;
+                background-color: teal; 
+            }
+        }
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        }
+       
+    
+
+            
+
+            
+
+
+
+
+        
+    </style>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, inventore. Debitis officiis veritatis officia, eveniet quod in excepturi neque minima velit. Maiores perspiciatis sed harum quas illum quibusdam corrupti provident eveniet dolores, ducimus blanditiis sequi ea reprehenderit nisi repellat modi labore a doloribus veniam necessitatibus eius voluptatem delectus assumenda! Distinctio?</span>
+    
+  
+
+<!-- external css ko use karna k tareeka -->
+<link rel="stylesheet" href="abdullah.css">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, at? Provident id maiores expedita, nam quo itaque autem pariatur odit reiciendis quibusdam quam quisquam natus recusandae fugiat amet. Nihil ipsum aliquam doloremque quaerat nesciunt quis aliquid atque tenetur, impedit vel nulla suscipit sunt. Molestias laboriosam aut molestiae nam maxime. Fugit eaque minima pariatur iste quia eveniet est ab tenetur, aperiam velit ducimus ad blanditiis libero, impedit facere ex exercitationem quasi corrupti veniam architecto modi illum. Minima nisi esse quos vero blanditiis amet nemo vel non id aut quia reiciendis doloribus inventore quisquam, eum ipsum porro odit, saepe soluta aliquid corrupti?</p>
+
+<!-- there are four types of selector(id,class,grouping,element) -->
+
+<!-- id css concept-->
+
+<p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti itaque quibusdam assumenda unde voluptates, culpa ab ipsum, dicta molestias qui hic officiis eius facere expedita consequatur mollitia repellendus libero quo.</p>
+<!-- css class concept -->
+<p class="haddi">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quia inventore optio vero deserunt error incidunt quasi, tempora necessitatibus! Dicta dolorum nihil magnam quod aut! Voluptates soluta illo tempora aliquam!</p>
+
+<p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates aperiam ut quos culpa fugiat, nam temporibus. Dolore fugiat rerum voluptatibus consectetur, veritatis error cumque nesciunt iste iure vel perspiciatis. Veritatis.</p>
+
+<p id="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore sint quaerat sunt repellendus fuga aut similique obcaecati possimus? Quibusdam voluptas accusamus accusantium, quo natus ea perferendis. Impedit a sed cupiditate assumenda asperiores eligendi. Facere, facilis labore fuga molestias officiis deleniti nesciunt cumque eius nulla, ea voluptate praesentium consequuntur, necessitatibus aut possimus cum iusto doloribus nam et. Eligendi, distinctio obcaecati? Omnis, reiciendis odio quod harum sint esse vitae rerum a soluta odit! Aut id tempore, facere nam at beatae quibusdam, eius praesentium magnam odit odio, laudantium blanditiis hic totam?</p>
+
+<p id="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit nisi mollitia vel, amet temporibus inventore exercitationem esse ad beatae commodi deserunt odio similique quidem ab ullam veritatis dolores recusandae ducimus iure?</p>
+
+<p id="backgroundpic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maxime ipsum odit nihil veritatis corporis?</p>
+
+<p class="padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quidem saepe, velit repellendus minus tempore nemo dolorem quis voluptatum.</p>
+<p class="padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quidem saepe, velit repellendus minus tempore nemo dolorem quis voluptatum.</p>
+<p class="padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quidem saepe, velit repellendus minus tempore nemo dolorem quis voluptatum.</p>
+<h1 class="head">WELCOME</h1>
+<div class="computer">
+<p id="stationery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus necessitatibus esse quos! Molestiae nisi impedit voluptate nulla facilis sint, ducimus eius nesciunt cum neque hic praesentium maiores quidem illum laboriosam! ipsum dolor sit, amet consectetur adipisicing elit. Neque quidem saepe, velit repellendus minus tempore nemo dolorem quis voluptatum.</p>
+<p id="comp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere hic id eum error, voluptate ad ut tempora exercitationem repellendus deserunt, accusamus maiores explicabo expedita itaque, ipsum quam qui deleniti! ipsum dolor sit, amet consectetur adipisicing elit. Neque quidem saepe, velit repellendus minus tempore nemo dolorem quis voluptatum.</p></div>
+<div class="computer">
+<p id="veg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque saepe nobis optio hic incidunt autem temporibus, corporis molestias cupiditate, esse, doloremque veniam quis dolorum ut quam animi natus molestiae? ipsum dolor sit, amet consectetur adipisicing elit. Neque quidem saepe, velit repellendus minus tempore nemo dolorem quis voluptatum.</p>
+
+<p id="egg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque saepe nobis optio hic incidunt autem temporibus, corporis molestias cupiditate, esse, doloremque veniam quis dolorum ut quam animi natus molestiae? ipsum dolor sit, amet consectetur adipisicing elit. Neque quidem saepe, velit repellendus minus tempore nemo dolorem quis voluptatum.</p>
+</div>
+<div class="link">
+    <h1>hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis accusamus, ducimus harum iusto neque delectus nostrum odio debitis fugit sapiente nesciunt excepturi possimus ipsam blanditiis ex numquam quas.</p>
+    <a href="position.html" class="ref">read more</a>
+    <button class="ref">contact us</button>
+</div>
+<header>
+    <nav class="navbar">
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">menu</a></li>
+        <div class="search"> <input type="text" name="search" id="search" placeholder="search here" ></div>
+        
+    </ul></nav>
+</header>
+<div><img src="pappa cv.jfif" class="image">
+<h1 class=hello>image</h1></div>
+<div class="gucci"><h1 class=hello>whats up</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia sunt iusto ut labore quibusdam harum corrupti porro, placeat reprehenderit velit? Consequatur ut molestias ipsum provident doloremque? Nulla aliquid cum sunt ratione vel dignissimos, ipsum earum necessitatibus voluptatibus at?</p></div>
+<div class="gucci"><h1 class=hello>whats up</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia sunt iusto ut labore quibusdam harum corrupti porro, placeat reprehenderit velit? Consequatur ut molestias ipsum provident doloremque? Nulla aliquid cum sunt ratione vel dignissimos, ipsum earum necessitatibus voluptatibus at?</p></div>
+<div class="gucci"><h1 class=hello>whats up</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia sunt iusto ut labore quibusdam harum corrupti porro, placeat reprehenderit velit? Consequatur ut molestias ipsum provident doloremque? Nulla aliquid cum sunt ratione vel dignissimos, ipsum earum necessitatibus voluptatibus at?</p></div>
+ <!--<div class="position">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    
+    <div class="box" id="box4">4</div> -->
+    
+</div>
+<div class="index">
+    <div class="visible" id="box7">1</div>
+    <div class="visible" id="box8">2</div>
+    <div class="visible" id="box9">3</div>
+    
+    <div class="visible" id="box10">4</div>
+    
+</div>
+<h1>Flexbox</h1>
+<div class="container">
+<div class="item" id="flex-1">1</div>
+<div class="item" id="flex-2">2</div>
+<div class="item" id="flex-3">3</div>
+<div class="item" id="flex-4">4</div>
+<div class="item" id="flex-5">5</div>
+<div class="item" id="flex-6">6</div></div>
+
+<div class="box" id="box1"> Windows</div>
+    <div class="box" id="box2"> MacOS</div>
+    <div class="box" id="box3"> Kali Linux</div>
+    <div class="box" id="box4">Android</div>
+
+
+
+
+</body>
+</html>

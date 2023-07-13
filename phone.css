@@ -1,0 +1,12 @@
+.nav{
+    flex-direction: column;
+    margin: 0px;
+    position: static;
+    left: 0px;
+}
+.online{
+    flex-direction: column;
+}
+.food{
+    flex-direction: column;
+}

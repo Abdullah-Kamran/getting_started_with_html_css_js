@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>foodies</title>
+    <link rel="stylesheet" media="screen and (max-width: 1270px)" href="phone.css">
+
+</head>
+<body>
+    <style>
+       
+           
+        
+        .img{
+            opacity: 0.95;
+            z-index: -2;
+            margin: -10px;
+            padding: -7px;
+        }
+        .nav{
+          justify-content: center;
+            display: block;
+            color: white;
+            font-size: 25px;
+            border: 5px solid rgb(0, 255, 255);
+            border-radius: 25px;
+          position: absolute;
+          top: 20px;
+          left: 340px;
+          display: flex;
+          
+           
+        }
+        .nav li{
+            display: inline-block;
+            justify-content: space-around;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .nav li a{
+            margin-right:50px ;
+            text-decoration: none;
+        transition-property: all;
+        color: white;
+        
+    }
+            .nav li a:hover{
+                background-color: black;
+                color: aqua;
+        
+        cursor: pointer;
+       
+        border-radius: 20px;
+
+
+        }
+        .logo{
+            justify-content: center;
+            align-items: center;
+            display: block;
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 25px;
+
+            
+
+        }
+        .online{
+            display:inline-block ;
+            justify-content: center;
+            align-items: center;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            position: absolute;
+            top: 200px;
+            left: 90px;
+            margin-left: 30px;
+            margin-right: 90px;
+            font-size: 25px;
+
+        }
+        .online h1{
+            color: #2092b5;
+            padding: 8px;
+        }
+        .now{
+            background-color: black;
+            color: yellow;
+            cursor: pointer;
+            height: 50px;
+            border-radius: 14px;
+            width: 130px;
+            font-size: 20px;
+        }
+        .now:hover{
+            color:black;
+            background-color: yellow;
+        }
+        .food{
+            border: 4px solid black;
+            border-radius: 18px;
+            display: inline-block;
+            width: 28%;
+            box-sizing: border-box;
+            background-color: rgb(35, 214, 154);
+            font-size: 20px;
+            padding: 19px;
+            margin-left: 55px;
+            
+        }
+        #pizza{
+            height: 80px;
+            width: 80px;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+
+        }
+        .pizza{
+            display: block;
+            height: 80px;
+            width: 80px;
+            margin: auto;
+            border-radius: 20px;
+        }
+       
+      h1{
+        text-align: center;
+      }
+      .clients{
+        justify-content: center;
+        align-items: center;
+        height: 678px;
+      }
+      .kfc{
+        margin-left: 200px;
+        margin-top: 30px;
+      }
+          .clients::before 
+          {
+            content: "";
+            background-image: url(client.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0px;
+            height: 700px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+          }
+           
+        
+        
+        #centered-heading {
+    text-align: center;
+    font-size: 40px;
+
+  }
+  .im-h{
+    font-size: 80px;
+    
+  }
+  .form{
+    display: block;
+   margin: auto;
+  }
+  #name{
+    
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 40px;
+
+  }
+  #number{
+    
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 40px;
+  }
+  #gmail{
+    
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 40px;
+  }
+  #address{
+    
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 40px;
+  }
+  .submit{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .form::before{
+    content: "";
+            background-image: url(contact.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0px;
+            height: 700px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+  }
+
+  #message{
+    display: flex;
+    margin: auto;
+    
+  }
+  .form-group{
+    text-align: center;
+   
+    font-size: 25px;
+  }
+  .head::before{
+    content: "";
+            background-image: url(delivery.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0px;
+            top: 750px;
+            height: 700px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+  }
+    </style>
+    
+        
+       <div> <img class="img" src="ba.jpg" height="750px" width="100%">
+  <div> <nav class="nav">
+        <div class="logo"><img  class="logo" src="scooter.png" height="70px" width="100px"></div>
+        <ul>
+            <li class="li" id="li-1"><a href="#">home</a></li>
+            <li class="li" id="li-2"><a href="#">menu</a></li>
+            <li class="li" id="li-3"><a href="#">about us</a></li>
+            <li class="li" id="li-4"><a href="#">contact us</a></li>
+        </ul>
+    </nav></div> 
+   
+    <section class="online">
+        <h1>welcome to my online meal</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, accusantium optio. Deleniti, ipsum! Atque obcaecati voluptatem minima voluptatibus tempora rem.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, accusantium optio. Deleniti, ipsum! Atque obcaecati voluptatem minima voluptatibus tempora rem.</p>
+        <button class="now">order now</button>
+    </section>
+    <section class="head">
+        <h1 id="centered-heading">our services</h1>
+    <div class="food">
+        <img class=pizza src="pizza.png"><h1> food ordering</h1><p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, iste magni. Atque, impedit consequuntur. Eaque ipsa assumenda quae beatae exercitationem officiis quis laborum tempore magnam ex velit officia nam, necessitatibus quisquam veniam suscipit distinctio.
+    </p></div>
+       <div class="food"> <img id=pizza src="scooter.png"><h1> food ordering</h1><p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, iste magni. Atque, impedit consequuntur. Eaque ipsa assumenda quae beatae exercitationem officiis quis laborum tempore magnam ex velit officia nam, necessitatibus quisquam veniam suscipit distinctio.
+    </p></div>
+    <div class="food">
+        <img class=pizza src="pizza.png"><h1> food ordering</h1><p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, iste magni. Atque, impedit consequuntur. Eaque ipsa assumenda quae beatae exercitationem officiis quis laborum tempore magnam ex velit officia nam, necessitatibus quisquam veniam suscipit distinctio.
+    </p></div></section>
+    <section>
+        <div class="clients">
+            <h1 class=im-h>our clients</h1>
+            <img class="kfc" src="kfc.png" height="150px" width="150px">
+            <img class="kfc" src="lab.png" height="150px" width="150px">
+            <img class="kfc" src="dom.png" height="150px" width="150px">
+            <img class="kfc" src="mac.png" height="150px" width="150px">
+            <img class="kfc" src="hut.png" height="150px" width="150px">
+            <img class="kfc" src="star.png" height="150px" width="150px">
+        </div>
+    </section>
+    <section>
+ </div>
+ <div>
+ <form class="form">
+    <h1 class="head"><center>order now</center> </h1>
+    <div>
+        <input type="text" name="myname" id="name" placeholder="enter your name">
+    </div><br>
+    <div>
+        <input type="text" name="myumber" id="number" placeholder="enter your number">
+    </div>
+    <div><br>
+        <input type="text" name="myname" id="gmail" placeholder="enter your gmail">
+    </div><br>
+    <div>
+        <input type="text" name="myname" id="address" placeholder="enter your address">
+    </div><br>
+    <div>
+        <input type="text" name="myname" id="address" placeholder="enter your address">
+    </div><br>
+    <div class="form-group">
+        <label for="message">Message: </label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="enter your experience"></textarea>
+    </div>
+    <div class="submit">
+
+        <input type="submit" value="submit now">
+        
+        
+             <input type="reset" value="reset now">
+</form></div></section>
+
+</body>
+</html>

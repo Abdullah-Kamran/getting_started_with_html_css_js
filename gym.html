@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .here{
+            background-color: black;
+            height: 60px;
+            width: 40%;
+            position: absolute;
+            left: 405px;
+            margin-top: 10px;
+            border: 5px solid rgb(27, 202, 164);
+            border-radius: 29px;
+           
+        }
+        .here li a{
+            text-decoration: none;
+            color: aliceblue;
+           margin-bottom: auto;
+            font-size: 20px;
+            text-align: center center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 5px;
+
+        }
+        .here li{
+            float: left;
+            padding: 10px;
+            margin: 12px;
+           list-style: none;
+           
+        }
+        input{
+            float: right;
+            padding: 6px;
+            margin: 3px;
+            width: 100px;
+        }
+        a:hover{
+                color: #f38200;
+                background-color: yellow;
+            }
+            a:visited{
+                background-color: rgb(27, 202, 164);
+                color: yellow;
+            }
+            a:active{
+                background-color: blue;
+            }
+          
+            .box{
+                position: absolute;
+                left:5px ;
+                border: 4px solid rgb(27, 202, 164);
+                font-size: 40px; box-sizing: border-box;
+                height: 330px;
+            }
+            .link{ color: black;
+                background-color: royalblue;
+                border: 4px solid rgb(27, 202, 164);
+                border-radius: 18px;
+                padding: 10px;
+                margin-top: 11px;
+                position: absolute;
+                right: 4px;
+                cursor: pointer;
+                height: 49px;
+                width: 190px;
+                font-size: larger;
+
+            }
+            #abd{
+                width: 95px;
+                text-align: center;
+                margin-top: 14px;
+                padding-top: 10px;
+                cursor: pointer;
+            }
+            #ull{
+                height: 30px;
+                margin-top: 14px;
+                padding-top: 10px;
+                cursor: pointer;
+            }
+            body{
+                background-image: url(https://westwon.co.uk/wp-content/uploads/2018/02/iStock-597959750.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 1;
+               
+            }
+            .form{
+                border: 5px solid black;
+                border-radius: 20px;
+                position: absolute;
+                top: 300px;
+                left: 300px;
+                height: 300px;
+                width: 30%;
+                text-align: center;
+            }
+            #name{
+                width: 50%;
+                position:absolute ;
+                right: 90px;
+                top: 50px;
+                text-align: center;
+               
+            }
+            #number{
+                width: 50%;
+                position:absolute ;
+                right: 90px;
+                top: 100px;
+                text-align: center;
+            }
+            #gmail{
+                width: 50%;
+                position:absolute ;
+                right: 90px;
+                top: 200px;
+                text-align: center;
+            }
+            #address{
+                width: 50%;
+                position:absolute ;
+                right: 90px;
+                top: 150px;
+                text-align: center;
+            }
+            .head{
+                font-size: 30px;
+                color: aqua;
+                font-style: italic;
+              
+            }
+            .submit{
+                position:absolute ;
+                right: 95px;
+                top: 250px;
+            }
+            #home{
+                position: absolute;
+                bottom: -6px;
+            }
+            #ser{
+                position: absolute;
+                bottom: -6px;
+                left: 150px;
+            }
+            #menu{
+                position: absolute;
+                bottom: -6px;
+                left: 300px;
+            }
+            .search{
+                position: absolute;
+                right: 20px;
+                bottom: 8px;
+              
+               
+            }  
+            button:hover{
+                color: black;
+                background-color: yellow;
+            }
+            button:visited{
+
+                background-color: rgb(12, 12, 4);
+                color: yellow;
+            }
+            button:active{
+                background-color: blue;}
+            
+
+
+    </style>
+    <div class="box">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.wZwMfBArPmTyO4XTNhA74wHaEP&pid=Api&rs=1&c=1&qlt=95&w=167&h=95" alt="notfound" width="210px" height="200px"><h3>mega gym</h3>
+    </div>
+    <nav class="here">
+        <ul>
+            <li id="home"><a href="abdullah.html">home</a></li>
+            <li id="ser"><a href="#">services</a></li>
+            <li id="menu"><a href="#">menu</a></li>
+            <div class="search"> <input type="text" name="search" id="search" placeholder="search here" ></div>
+            
+        </ul></nav>
+        <div class="link">
+        <button id="abd">call us</button>
+        <button id="ull">message us</button></div>
+        <form class="form">
+            <h1 class="head"><center>join now</center> </h1>
+            <div>
+                <input type="text" name="myname" id="name" placeholder="enter your name">
+            </div><br>
+            <div>
+                <input type="text" name="myumber" id="number" placeholder="enter your number">
+            </div>
+            <div><br>
+                <input type="text" name="myname" id="gmail" placeholder="enter your gmail">
+            </div><br>
+            <div><br>
+                <input type="text" name="myname" id="address" placeholder="enter your address">
+            </div><br>
+            <div class="submit">
+       
+                <input type="submit" value="submit now">
+                
+                
+                     <input type="reset" value="reset now"></div>
+        </form>
+</body>
+</html>
